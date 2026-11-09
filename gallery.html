@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Sioufi Taxi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"> Sioufi Taxi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-warning btn-sm ms-3">🌙 Dark</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero text-center">
+        <div class="container">
+            <h1 class="fw-bold">Our Gallery</h1>
+            <p>A look at our fleet, team, and the journeys we make possible.</p>
+        </div>
+    </section>
+
+    <!-- FILTER BUTTONS -->
+    <section class="gallery-filter-section text-center">
+        <div class="container">
+            <button class="filter-btn active-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="cars">Our Cars</button>
+            <button class="filter-btn" data-filter="airport">Airport</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+
+                <img src="image/Main.jpg"  class="gallery-item cars"    alt="Sioufi Taxi main vehicle">
+                <img src="image/Kia.jpg"  class="gallery-item cars"    alt=" Taxi main vehicle">
+                <img src="image/Airports.png" class="gallery-item airport" alt="Airport pickup service">
+                <img src="image/Events.png"  class="gallery-item events"  alt="Wedding transportation event">
+                <img src="image/kiaa.jpg"  class="gallery-item cars"    alt="Sioufi Taxi fleet car">
+                <img src="image/offers.jpg"   class="gallery-item events"  alt="Special offer event ride">
+                <img src="image/Airports pick.jfif" class="gallery-item airport" alt="Early morning airport drop-off">
+                <img src="image/Buscard.jpg"    class="gallery-item events"    alt="Sioufi Taxi loyalty card">
+                <img src="image/both.jpg"  class="gallery-item cars"  alt="Corporate group transport">
+                <img src="image/Avanza.jpg"  class="gallery-item cars"    alt="Avanza">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span id="lightboxClose" class="lightbox-close">&times;</span>
+        <img id="lightboxImg" src="" alt="Enlarged gallery photo">
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Sioufi Taxi. All Rights Reserved. | <a href="contact.html">Contact Us</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

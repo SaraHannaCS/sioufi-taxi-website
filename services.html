@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Sioufi Taxi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"> Sioufi Taxi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-warning btn-sm ms-3">🌙 Dark</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero text-center">
+        <div class="container">
+            <h1 class="fw-bold">Our Services</h1>
+            <p>Professional transportation solutions for every occasion.</p>
+        </div>
+    </section>
+
+    <!-- SEARCH & FILTER -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <input type="text" id="searchInput" placeholder="🔍  Search a service...">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="City">City</option>
+                    <option value="Airport">Airport</option>
+                    <option value="Events">Events</option>
+                    <option value="Corporate">Corporate</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES LOADED VIA AJAX -->
+    <section class="services-list-section">
+        <div class="container">
+            <div id="servicesContainer" class="row g-4">
+                <p class="loading-msg">Loading services...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING TABLE -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Pricing Overview</h2>
+            <div class="table-responsive">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Category</th>
+                            <th>Starting Price</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>City Rides</td>
+                            <td>City</td>
+                            <td>From $10</td>
+                            <td>24/7</td>
+                        </tr>
+                        <tr>
+                            <td>Airport Transfer</td>
+                            <td>Airport</td>
+                            <td>From $25</td>
+                            <td>24/7</td>
+                        </tr>
+                        <tr>
+                            <td>Events &amp; Weddings</td>
+                            <td>Events</td>
+                            <td>From $50</td>
+                            <td>By Booking</td>
+                        </tr>
+                        <tr>
+                            <td>Corporate Transport</td>
+                            <td>Corporate</td>
+                            <td>From $40</td>
+                            <td>Business Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Long Distance Trips</td>
+                            <td>City</td>
+                            <td>From $60</td>
+                            <td>24/7</td>
+                        </tr>
+                        <tr>
+                            <td>VIP Airport Lounge</td>
+                            <td>Airport</td>
+                            <td>From $45</td>
+                            <td>24/7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING CTA -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Ready to Book?</h2>
+            <p>Choose any service and let us handle the rest. Available 24/7.</p>
+            <a href="contact.html" class="btn btn-warning btn-lg">Book a Ride Now</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Sioufi Taxi. All Rights Reserved. | <a href="contact.html">Contact Us</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

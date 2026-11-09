@@ -1,0 +1,44 @@
+[
+    {
+        "name": "City Rides",
+        "category": "City",
+        "description": "Quick and safe rides inside Beirut and surrounding areas. Available around the clock.",
+        "price": 10,
+        "image": "image/City Rides.png"
+    },
+    {
+        "name": "Airport Transfer",
+        "category": "Airport",
+        "description": "Reliable pickup and drop-off to and from Rafic Hariri International Airport, 24/7.",
+        "price": 25,
+        "image": "image/Airports.png"
+    },
+    {
+        "name": "Events & Weddings",
+        "category": "Events",
+        "description": "Elegant group transportation for weddings, family gatherings, and special occasions.",
+        "price": 50,
+        "image": "image/Events.png"
+    },
+    {
+        "name": "Corporate Transport",
+        "category": "Corporate",
+        "description": "Professional and discreet transportation for business executives and corporate groups.",
+        "price": 40,
+        "image": "image/corporate.png"
+    },
+    {
+        "name": "Long Distance Trips",
+        "category": "City",
+        "description": "Comfortable rides across all of Lebanon — North, South, or Bekaa Valley.",
+        "price": 60,
+        "image": "image/distance.png"
+    },
+    {
+        "name": "VIP Airport Lounge",
+        "category": "Airport",
+        "description": "Premium airport service with meet-and-greet, luggage assistance, and priority pickup.",
+        "price": 45,
+        "image": "image/Airport.png"
+    }
+]
